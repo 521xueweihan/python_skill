@@ -10,13 +10,13 @@
 from flufl.enum import Enum
 # 继承自Enum定义枚举,枚举值唯一
 #class Seasons(Enum):
-#    Spring = 'Spring' #如果给spring赋值2，报错
+#    Spring = 'Spring' #如果给spring赋值2，报错，值不能重复
 #    Summer = 2 
 #    Autumn = 3
 #    Winter = 4
 
 # 直接实例化Enum类
-Seasons = Enum('Seasons', 'Spring Summer Autumn Winter')   
+Seasons = Enum('Seasons', 'Summer Summer Autumn Winter') #如果枚举中有重复则之显示一个，后一个覆盖前一个  
 
 # flufl.enum 提供了__members__属性，可以对枚举名称进行迭代 
 for member in Seasons.__members__:
