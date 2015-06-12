@@ -52,8 +52,8 @@ print type(a) == type(b)  #True
 
 # 使用isinstance()函数来解决以上两个示例：
 # isinstance()函数支持多种类型那个列表
-print isinstance(n, int) # 这样就可以正确的显示34行的代码的类型了：True
-
+print isinstance(n, TestInt) # 这样就可以正确的显示34行的代码的类型了：True
+# 子类是的type等于父的，但是父类的不等于子类的
 
 
 
